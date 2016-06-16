@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context="com.example.mihir.recview.QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/first_ll"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practice Set 1"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="#3F51B5"
+            android:id="@+id/info_parent_quiz_text_view"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Question 1"
+            android:id="@+id/question_id_text_view"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#68EFAD"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the sample Question Activity"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:id="@+id/info_question_text_view"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_ll"
+        android:layout_below="@id/first_ll"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="(A) Sample Option A"
+                android:id="@+id/optionA"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="2dp"
+                android:background="#3F51B5"
+                android:layout_marginBottom="2dp"
+                android:onClick="checkAnswerA"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/optionB"
+                android:text="(B) Sample option B"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="2dp"
+                android:background="#3F51B5"
+                android:textSize="14sp"
+                android:onClick="checkAnswerB"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/optionC"
+                android:text="(C) Sample Option C"
+                android:textColor="#FFFFFF"
+                android:background="#3F51B5"
+                android:onClick="checkAnswerC"
+                android:textAllCaps="false"
+                android:layout_marginRight="2dp"
+                android:textSize="14sp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/optionD"
+                android:onClick="checkAnswerD"
+                android:text="(D) Sample Option D"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="#3F51B5"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#68EFAD"
+        android:layout_margin="16dp"
+        android:id="@+id/view_line"
+        android:layout_above="@+id/images_ll"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/images_ll"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:onClick="previousQuestion"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/previousquesstion"
+
+                />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="Previous\nQuestion"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="showSolution"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/canvas"
+                />
+
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Show\nSolution"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/finish"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Finish"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sharequestion"
+                />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Share\nQuestion"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="nextQuestion"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/nxtquestion"
+                />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Next\nQuestion"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

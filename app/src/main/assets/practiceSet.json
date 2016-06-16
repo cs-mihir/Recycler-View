@@ -1,0 +1,260 @@
+{
+	"quiz":[
+		{
+			"pid":1,
+			"name":"Practice Set 1",
+			"description":"All about UI and XML",
+			"questions":[
+				{
+					"qid":1,
+					"name":"Question 1",
+					"question":"What is full form of UI?",
+					"optionA":"(A) User Interaction",
+					"optionB":"(B) Unique Interaction",
+					"optionC":"(C) User Interface",
+					"optionD":"(D) Unique Interface",
+					"answer":"Option C",
+					"solution":"Answer of this question is option C because..."
+				},
+				{
+					"qid":2,
+					"name":"Question 2",
+					"question":"Which of the following object(s) are used in building User Interface for any Android Application?",
+					"optionA":"(A) View",
+					"optionB":"(B) ViewGroup",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None of the above",
+					"answer":"Option C",
+					"solution":"All user interface elements in an Android app are built using View and ViewGroup objects."
+				},
+				{
+					"qid":3,
+					"name":"Question 3",
+					"question":"Which of the following draws something on the screen through which the user can interact with Application?",
+					"optionA":"(A) ViewGroup",
+					"optionB":"(B) View",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None",
+					"answer":"Option B",
+					"solution":" A View is an object that draws something on the screen that the user can interact with."
+				},
+				{
+					"qid":4,
+					"name":"Question 4",
+					"question":"What can a View object do?",
+					"optionA":"(A) Controls Input to App",
+					"optionB":"(B) Widgets that draw some part of UI",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None",
+					"answer":"Option C",
+					"solution":" A View is an object that draws something on the screen that the user can interact with and also some View Objects controls flow of application regarding the requirements od user"
+				},
+				{
+					"qid":5,
+					"name":"Question 5",
+					"question":"What is(are) constituent(s) of a ViewGroup object?",
+					"optionA":"(A) Other View Objects",
+					"optionB":"(B) Other ViewGroup Objects",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None",
+					"answer":"Option C",
+					"solution":"A ViewGroup is an object that holds other Views and ViewGroup objects in order to define the layout of the interface."
+				}
+			]
+		},
+		{
+			"pid":2,
+			"name":"Practice Set 2",
+			"description":"All about Intent",
+			"questions":[
+				{
+					"qid":1,
+					"name":"Question 1",
+					"question":"Which of the following is(are) fundamental use(s) of Intent object?",
+					"optionA":"(A) It can be used to start an activity",
+					"optionB":"(B) It can be used to start a service",
+					"optionC":"(C) It can be used to deliver broadcast",
+					"optionD":"(D) All of the above",
+					"answer":"Option D",
+					"solution":"There are three fundamental use-cases of an Intent\n1)To start an activity\n2)To start a service\n3)To deliver a broadcast"
+				},
+				{
+					"qid":2,
+					"name":"Question 2",
+					"question":"Which of the following is a type of Intent?",
+					"optionA":"(A) Inbuilt Intent",
+					"optionB":"(B) onCreate Intent",
+					"optionC":"(C) Implicit Intent",
+					"optionD":"(D) None of the above",
+					"answer":"Option C",
+					"solution":"There are two types of Intents:\n1)Implicit Intent\n2)Explicit Intent"
+				},
+				{
+					"qid":3,
+					"name":"Question 3",
+					"question":"Which of the following Intent type is used to start a component in your own app?",
+					"optionA":"(A) Implicit Intent",
+					"optionB":"(B) Explicit Intent",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None of the above",
+					"answer":"Option B",
+					"solution":"Explicit intents specify the component to start by name (the fully-qualified class name).\nYou'll typically use an explicit intent to start a component in your own app, because you know the class name of the activity or service you want to start."
+				},
+				{
+					"qid":4,
+					"name":"Question 4",
+					"question":"Which of the following Intent type is used to perform a general action,which allows component from the other app to do it?",
+					"optionA":"(A) Implicit Intent",
+					"optionB":"(B) Explicit Intent",
+					"optionC":"(C) Both (A) and (B)",
+					"optionD":"(D) None of the above",
+					"answer":"Option A",
+					"solution":"Implicit intents do not name a specific component, but instead declare a general action to perform\nWhich allows a component from another app to handle it.\nFor example, if you want to show the user a location on a map, you can use an implicit intent to request that another capable app show a specified location on a map."
+				},
+				{
+					"qid":5,
+					"name":"Question 5",
+					"question":"Which of the following in application's manifest file specifies the types of the intents that the component would like to receive?",
+					"optionA":"(A) Intent Receiver",
+					"optionB":"(B) Intent Modifier",
+					"optionC":"(C) Intent Filter",
+					"optionD":"(D) None of the above",
+					"answer":"Option C",
+					"solution":"An intent filter is an expression in an app's manifest file that specifies the type of intents that the component would like to receive.\nFor instance, by declaring an intent filter for an activity, you make it possible for other apps to directly start your activity with a certain kind of intent."
+				}
+			]
+		},
+		{
+			"pid":3,
+			"name":"Practice Set 3",
+			"description":"All about Manifest",
+			"questions":[
+				{
+					"qid":1,
+					"name":"Question 1",
+					"question":"Which of the following file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
+					"optionA":"(A) App Permission",
+					"optionB":"(B) App Information",
+					"optionC":"(C) App Manifest",
+					"optionD":"(D) None of the above",
+					"answer":"Option C",
+					"solution":"The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code."
+				},
+				{
+					"qid":2,
+					"name":"Question 2",
+					"question":"What is the extension of App's manifest file?",
+					"optionA":"(A) .java",
+					"optionB":"(B) .xml",
+					"optionC":"(C) .cpp",
+					"optionD":"(D) .py",
+					"answer":"Option B",
+					"solution":"Extension of App's Manifest file is .xml that is it is named as AndroidManifest.xml "
+				},
+				{
+					"qid":3,
+					"name":"Question 3",
+					"question":"Which of the following are included in AndroidManifest.xml file?",
+					"optionA":"(A) Permission required by other apps",
+					"optionB":"(B) Describes Activities",
+					"optionC":"(C) Processes hosting app's components",
+					"optionD":"(D) All Of The Above",
+					"answer":"Option D",
+					"solution":"Manifest file describes the components of the application — the activities, services, broadcast receivers, and content providers that the application is composed of.\nIt determines which processes will host application components.\nIt declares which permissions the application must have in order to access protected parts of the API and interact with other applications"
+				},
+
+				{
+					"qid":4,
+					"name":"Question 3",
+					"question":"Which of the following class provide profiling and other information as the app is running?",
+					"optionA":"(A) Instrumentation",
+					"optionB":"(B) R",
+					"optionC":"(C) MainActivity.class",
+					"optionD":"(D) None",
+					"answer":"Option A",
+					"solution":" Instrumentation classes provide profiling and other information as the application is running.\nThese declarations are present in the manifest only while the application is being developed and tested; they're removed before the application is published."
+				}
+			]
+		},
+		{
+			"pid":4,
+			"name":"Practice Set 4",
+			"description":"All about SQLite",
+			"questions":[
+				{
+					"qid":1,
+					"name":"Question 1",
+					"question":"This is the First Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				},
+				{
+					"qid":2,
+					"name":"Question 2",
+					"question":"This is the Second Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				},
+				{
+					"qid":3,
+					"name":"Question 3",
+					"question":"This is the First Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				}
+			]
+		},
+		{
+			"pid":5,
+			"name":"Practice Set 5",
+			"description":"All about HTTP",
+			"questions":[
+				{
+					"qid":1,
+					"name":"Question 1",
+					"question":"This is the First Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				},
+				{
+					"qid":2,
+					"name":"Question 2",
+					"question":"This is the Second Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				},
+				{
+					"qid":3,
+					"name":"Question 3",
+					"question":"This is the First Question",
+					"optionA":"(A) Option A",
+					"optionB":"(B) Option B",
+					"optionC":"(C) Option C",
+					"optionD":"(D) Option D",
+					"answer":"Option B",
+					"solution":"Answer of this question is option B because..."
+				}
+			]
+		}
+	]
+}
