@@ -1,389 +1,91 @@
 {
-	"quiz":[
-		{
-			"pid":1,
-			"name":"Practice Set 1",
-			"description":"All about UI and XML",
-			"questions":[
-				{
-					"qid":1,
-					"name":"Question 1",
-					"question":"What is full form of UI?",
-					"optionA":"(A) User Interaction",
-					"optionB":"(B) Unique Interaction",
-					"optionC":"(C) User Interface",
-					"optionD":"(D) Unique Interface",
-					"answer":"Option C",
-					"solution":"UI is User Interface"
-				},
-				{
-					"qid":2,
-					"name":"Question 2",
-					"question":"Which of the following object(s) are used in building User Interface for any Android Application?",
-					"optionA":"(A) View",
-					"optionB":"(B) ViewGroup",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None of the above",
-					"answer":"Option C",
-					"solution":"All user interface elements in an Android app are built using View and ViewGroup objects."
-				},
-				{
-					"qid":3,
-					"name":"Question 3",
-					"question":"Which of the following draws something on the screen through which the user can interact with Application?",
-					"optionA":"(A) ViewGroup",
-					"optionB":"(B) View",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None",
-					"answer":"Option B",
-					"solution":" A View is an object that draws something on the screen that the user can interact with."
-				},
-				{
-					"qid":4,
-					"name":"Question 4",
-					"question":"What can a View object do?",
-					"optionA":"(A) Controls Input to App",
-					"optionB":"(B) Widgets that draw some part of UI",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None",
-					"answer":"Option C",
-					"solution":" A View is an object that draws something on the screen that the user can interact with and also some View Objects controls flow of application regarding the requirements od user"
-				},
-				{
-					"qid":5,
-					"name":"Question 5",
-					"question":"What is(are) constituent(s) of a ViewGroup object?",
-					"optionA":"(A) Other View Objects",
-					"optionB":"(B) Other ViewGroup Objects",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None",
-					"answer":"Option C",
-					"solution":"A ViewGroup is an object that holds other Views and ViewGroup objects in order to define the layout of the interface."
-				},
-				{
-					"qid":6,
-					"name":"Question 6",
-					"question":"Which value(s) is(are) possible for Orientation?",
-					"optionA":"(A) HORIZONTAL",
-					"optionB":"(B) VERTICAL",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None",
-					"answer":"Option C",
-					"solution":"Values for Orientation are set as either HORIZONTAL or VERTICAL.\nAlso they can be set using setOrientation() method."
-
-				}
-
-			]
-		},
-		{
-			"pid":2,
-			"name":"Practice Set 2",
-			"description":"All about Intent",
-			"questions":[
-				{
-					"qid":1,
-					"name":"Question 1",
-					"question":"Which of the following is(are) fundamental use(s) of Intent object?",
-					"optionA":"(A) It can be used to start an activity",
-					"optionB":"(B) It can be used to start a service",
-					"optionC":"(C) It can be used to deliver broadcast",
-					"optionD":"(D) All of the above",
-					"answer":"Option D",
-					"solution":"There are three fundamental use-cases of an Intent\n1)To start an activity\n2)To start a service\n3)To deliver a broadcast"
-				},
-				{
-					"qid":2,
-					"name":"Question 2",
-					"question":"Which of the following is a type of Intent?",
-					"optionA":"(A) Inbuilt Intent",
-					"optionB":"(B) onCreate Intent",
-					"optionC":"(C) Implicit Intent",
-					"optionD":"(D) None of the above",
-					"answer":"Option C",
-					"solution":"There are two types of Intents:\n1)Implicit Intent\n2)Explicit Intent"
-				},
-				{
-					"qid":3,
-					"name":"Question 3",
-					"question":"Which of the following Intent type is used to start a component in your own app?",
-					"optionA":"(A) Implicit Intent",
-					"optionB":"(B) Explicit Intent",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None of the above",
-					"answer":"Option B",
-					"solution":"Explicit intents specify the component to start by name (the fully-qualified class name).\nYou'll typically use an explicit intent to start a component in your own app, because you know the class name of the activity or service you want to start."
-				},
-				{
-					"qid":4,
-					"name":"Question 4",
-					"question":"Which of the following Intent type is used to perform a general action,which allows component from the other app to do it?",
-					"optionA":"(A) Implicit Intent",
-					"optionB":"(B) Explicit Intent",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None of the above",
-					"answer":"Option A",
-					"solution":"Implicit intents do not name a specific component, but instead declare a general action to perform\nWhich allows a component from another app to handle it.\nFor example, if you want to show the user a location on a map, you can use an implicit intent to request that another capable app show a specified location on a map."
-				},
-				{
-					"qid":5,
-					"name":"Question 5",
-					"question":"Which of the following in application's manifest file specifies the types of the intents that the component would like to receive?",
-					"optionA":"(A) Intent Receiver",
-					"optionB":"(B) Intent Modifier",
-					"optionC":"(C) Intent Filter",
-					"optionD":"(D) None of the above",
-					"answer":"Option C",
-					"solution":"An intent filter is an expression in an app's manifest file that specifies the type of intents that the component would like to receive.\nFor instance, by declaring an intent filter for an activity, you make it possible for other apps to directly start your activity with a certain kind of intent."
-				},
-				{
-					"qid":6,
-					"name":"Question 6",
-					"question":"What is splash screen in android?",
-					"optionA":"(A) Initial activity of an application",
-					"optionB":"(B) Initial service of an application",
-					"optionC":"(C) Initial method of an application",
-					"optionD":"(D) Initial screen if an application",
-					"answer":"Option C",
-					"solution":"Splash is an activity. Generally it appears as initial screen of an application and works based on thread concept."
-				},
-
-				{
-					"qid":7,
-					"name":"Question 7",
-					"question":" What is fragment in android?",
-					"optionA":"(A) JSON",
-					"optionB":"(B) Piece of an Activity",
-					"optionC":"(C) Layout",
-					"optionD":"(D) None of the above",
-					"answer":"Option B",
-					"solution":"Fragment is a peace of an activity. If you want to move your application in 360 degrees, you can do this by using a fragment."
-				}
-
-
-			]
-		},
-		{
-			"pid":3,
-			"name":"Practice Set 3",
-			"description":"All about Manifest",
-			"questions":[
-				{
-					"qid":1,
-					"name":"Question 1",
-					"question":"Which of the following file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
-					"optionA":"(A) App Permission",
-					"optionB":"(B) App Information",
-					"optionC":"(C) App Manifest",
-					"optionD":"(D) None of the above",
-					"answer":"Option C",
-					"solution":"The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code."
-				},
-				{
-					"qid":2,
-					"name":"Question 2",
-					"question":"What is the extension of App's manifest file?",
-					"optionA":"(A) .java",
-					"optionB":"(B) .xml",
-					"optionC":"(C) .cpp",
-					"optionD":"(D) .py",
-					"answer":"Option B",
-					"solution":"Extension of App's Manifest file is .xml that is it is named as AndroidManifest.xml "
-				},
-				{
-					"qid":3,
-					"name":"Question 3",
-					"question":"Which of the following are included in AndroidManifest.xml file?",
-					"optionA":"(A) Permission required by other apps",
-					"optionB":"(B) Describes Activities",
-					"optionC":"(C) Processes hosting app's components",
-					"optionD":"(D) All Of The Above",
-					"answer":"Option D",
-					"solution":"Manifest file describes the components of the application — the activities, services, broadcast receivers, and content providers that the application is composed of.\nIt determines which processes will host application components.\nIt declares which permissions the application must have in order to access protected parts of the API and interact with other applications"
-				},
-
-				{
-					"qid":4,
-					"name":"Question 4",
-					"question":"Which of the following class provide profiling and other information as the app is running?",
-					"optionA":"(A) Instrumentation",
-					"optionB":"(B) R",
-					"optionC":"(C) MainActivity.class",
-					"optionD":"(D) None",
-					"answer":"Option A",
-					"solution":" Instrumentation classes provide profiling and other information as the application is running.\nThese declarations are present in the manifest only while the application is being developed and tested; they're removed before the application is published."
-				},
-
-				{
-					"qid":5,
-					"name":"Question 5",
-					"question":"Which permissions are required to get a location in android?",
-					"optionA":"(A) ACCESS_FINE and ACCESS_COARSE",
-					"optionB":"(B) GPRS Permission",
-					"optionC":"(C) Internet Permission",
-					"optionD":"(D) WIFI Permission",
-					"answer":"Option A",
-					"solution":"To  get  a  location  of  a  phone,  ACCESS_FINE  and  ACCESS_COARSE  permission  in  manifest  file  are  required.  Without  these permissions, we can't get the location of a mobile."
-				}
-			]
-		},
-		{
-			"pid":4,
-			"name":"Practice Set 4",
-			"description":"All about SQLite",
-			"questions":[
-				{
-					"qid":1,
-					"name":"Question 1",
-					"question":"What is SQLite?",
-					"optionA":"(A) Open Source Relational Database",
-					"optionB":"(B) Open Source Non Relational Database",
-					"optionC":"(C) Proprietary Relational Database",
-					"optionD":"(D) Proprietary Non Relational Database",
-					"answer":"Option A",
-					"solution":"SQLite is an Open Source database.\nSQLite supports standard relational database features like SQL syntax, transactions and prepared statements."
-				},
-				{
-					"qid":2,
-					"name":"Question 2",
-					"question":"How to upgrade SQlite the database from a lower version to higher version in android SQlite?",
-					"optionA":"(A) Using helper Class",
-					"optionB":"(B) Using cursor",
-					"optionC":"(C) Using Intent",
-					"optionD":"(D) None of the above",
-					"answer":"Option A",
-					"solution":"In helper class, we can pass the version numbers in incremental order"
-				},
-				{
-					"qid":3,
-					"name":"Question 3",
-					"question":"Which of the following Data Type is NOT supported in SQLite",
-					"optionA":"(A) TEXT",
-					"optionB":"(B) INTEGER",
-					"optionC":"(C) FLOAT",
-					"optionD":"(D) REAL",
-					"answer":"Option C",
-					"solution":"SQLite supports the data types\n1)TEXT (similar to String in Java)\n2)INTEGER (similar to long in Java)\n3)REAL (similar to double in Java)."
-				},
-				{
-					"qid":4,
-					"name":"Question 4",
-					"question":"Which type of object is returned after Query is performed in SQLite?",
-					"optionA":"(A) Pointer",
-					"optionB":"(B) Cursor",
-					"optionC":"(C) DataObject",
-					"optionD":"(D) RowObject",
-					"answer":"Option B",
-					"solution":"A query returns a Cursor object.\nA Cursor represents the result of a query and basically points to one row of the query result. "
-				},
-				{
-					"qid":5,
-					"name":"Question 5",
-					"question":"Which of the following method(s) SQLite Database provide(s) in android?",
-					"optionA":"(A) insert()",
-					"optionB":"(B) update()",
-					"optionC":"(C) delete()",
-					"optionD":"(D) All of the above",
-					"answer":"Option D",
-					"solution":" SQLiteDatabase is the base class for working with a SQLite database in Android and provides methods to open, query, update and close the database.\nMore specifically SQLiteDatabase provides the insert(), update() and delete() methods. "
-				},
-				{
-					"qid":6,
-					"name":"Question 6",
-					"question":"Which of the following method returns total number of columns in table?",
-					"optionA":"(A) getCount()",
-					"optionB":"(B) getColumnCount()",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None of the above",
-					"answer":"Option B",
-					"solution":"Method name:getColumnCount()\nWork:This method return the total number of columns of the table."
-				},
-
-				{
-					"qid":7,
-					"name":"Question 7",
-					"question":"Which of the following method returns total number of rows in table?",
-					"optionA":"(A) getRowCount()",
-					"optionB":"(B) getCount()",
-					"optionC":"(C) Both (A) and (B)",
-					"optionD":"(D) None of the above",
-					"answer":"Option B",
-					"solution":"Method name:getCount()\nWork:This method return the total number of rows of the table."
-				},
-				{
-					"qid":8,
-					"name":"Question 8",
-					"question":"Which of the following is a formal declaration of how the database is organized?",
-					"optionA":"(A) Tables",
-					"optionB":"(B) Columns",
-					"optionC":"(C) Schema",
-					"optionD":"(D) None of the above",
-					"answer":"Option C",
-					"solution":"One of the main principles of SQL databases is the schema:\nA formal declaration of how the database is organized. "
-				}
-			]
-		},
-		{
-			"pid":5,
-			"name":"Practice Set 5",
-			"description":"All about HTTP",
-			"questions":[
-				{
-					"qid":1,
-					"name":"Question 1",
-					"question":"What is an HTTP client class in android?",
-					"optionA":"(A) httprequest",
-					"optionB":"(B) Cookies Management",
-					"optionC":"(C) Authentication Management",
-					"optionD":"(D) None of the above",
-					"answer":"Option A",
-					"solution":"HTTP request has get and post methods and it returns the response from the servers."
-				},
-				{
-					"qid":2,
-					"name":"Question 2",
-					"question":"What is off­line synchronization in android?",
-					"optionA":"(A) Synchronization with internet",
-					"optionB":"(B) Background synchronization",
-					"optionC":"(C) Synchronization without internet",
-					"optionD":"(D) None of the above",
-					"answer":"Option B",
-					"solution":"Synchronization without internet in which we can take the application data without internet"
-				},
-				{
-					"qid":3,
-					"name":"Question 3",
-					"question":"Which permission is needed to connect the app to Internet?",
-					"optionA":"(A) GPRS Permission",
-					"optionB":"(B) Wi-Fi Permission",
-					"optionC":"(C) INTERNET Permission",
-					"optionD":"(D) None of the Above",
-					"answer":"Option C",
-					"solution":"You must add the android.permission.INTERNET permission to your app's manifest.\nWithout this, your app won't be able to connect to the network"
-				},
-
-				{
-					"qid":4,
-					"name":"Question 4",
-					"question":"Which of the following is NOT a HTTP Method?",
-					"optionA":"(A) GET",
-					"optionB":"(B) POST",
-					"optionC":"(C) PUT",
-					"optionD":"(D) REMOVE",
-					"answer":"Option D",
-					"solution":"There are 4 HTTP Methods.\n1)GET\n2)POST\n3)PUT\n4)DELETE"
-				},
-				{
-					"qid":5,
-					"name":"Question 5",
-					"question":"To check if you are connected to that network or internet which of the following class is used?",
-					"optionA":"(A) ConnectionLoader",
-					"optionB":"(B) ConnectionManager",
-					"optionC":"(C) ConnectivityManager",
-					"optionD":"(D) None ofthe Above",
-					"answer":"Option C",
-					"solution":"Before you perform any network operations, you must first check that are you connected to that network or internet e.t.c.\nFor this android provides ConnectivityManager class."
-				}
-			]
-		}
-	]
+  "quiz":[
+    {
+      "pid":1,
+      "name":"Practice Set 1",
+      "description":"All about Practice Set 1",
+      "questions":[
+        {
+          "qid":1,
+          "name":"Question 1",
+          "question":"This is sample question 1",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option C",
+          "solution":"This is sample Solution for Question 1"
+        },
+        {
+          "qid":2,
+          "name":"Question 2",
+          "question":"This is sample question 2?",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option C",
+          "solution":"This is sample Solution for Question 2"
+        }
+      ]
+    },
+    {
+      "pid":2,
+      "name":"Practice Set 2",
+      "description":"All about Practice Set 2",
+      "questions":[
+        {
+          "qid":1,
+          "name":"Question 1",
+          "question":"This is sample question 1",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option B",
+          "solution":"This is sample Solution for Question 1"
+        },
+        {
+          "qid":2,
+          "name":"Question 2",
+          "question":"This is sample question 2?",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option B",
+          "solution":"This is sample Solution for Question 2"
+        }
+      ]
+    },
+    {
+      "pid":3,
+      "name":"Practice Set 3",
+      "description":"All about Practice Set 3",
+      "questions":[
+        {
+          "qid":1,
+          "name":"Question 1",
+          "question":"This is sample question 1",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option D",
+          "solution":"This is sample Solution for Question 1"
+        },
+        {
+          "qid":2,
+          "name":"Question 2",
+          "question":"This is sample question 2?",
+          "optionA":"(A) Option A",
+          "optionB":"(B) Option B",
+          "optionC":"(C) Option C",
+          "optionD":"(D) Option D",
+          "answer":"Option D",
+          "solution":"This is sample Solution for Question 2"
+        }
+      ]
+    }
+  ]
 }
